@@ -3,15 +3,11 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 
 async function parseAFLWebsiteData() {
-  const url = "http://www.afl.com.au/ladder";
-
   try {
-    const response = await axios.get(url);
-    const html = response.data;
-    const $ = cheerio.load(html);
-
+    const { data } = await axios.get('https://www.afl.com.au/ladder');
+    const $ = cheerio.load(data);
     const ladder = [];
-
+    
     const rows = $('.ladder__table tbody tr'); // Select table with class 'ladder' and its rows
 
     rows.each((index, row) => {
@@ -44,11 +40,29 @@ async function parseAFLWebsiteData() {
       }
     });
 
-    fs.writeFileSync('afl-ladder.json', JSON.stringify(ladder, null, 2));
-
+    const tableMarkdown = generateMarkdownTable(ladder);
+    updateReadme(tableMarkdown);
+    console.log('Ladder updated successfully.');
   } catch (error) {
-    console.error(`Error fetching data: ${error}`);
+    console.error('Error:', error.message);
   }
+}
+
+function generateMarkdownTable(ladder) {
+    console.log(ladder);
+    // Generate Markdown table from ladder array
+    const tableHeader = '| Position | Club | Played | Points | Percentage | Won | Lost | Drawn | PF | PA |\n| -------- | ---- | ------ | ------ | ---------- | --- | ---- | ----- | -- | -- |\n';
+    const tableRows = ladder.map(item => `| ${item.position} | ${item.club} | ${item.played} | ${item.points} | ${item.percentage} | ${item.won} | ${item.lost} | ${item.drawn} | ${item.pf} | ${item.pa} |`).join('\n');
+    return `${tableHeader}${tableRows}`;
+}
+
+function updateReadme(tableMarkdown) {
+  const readmeContents = fs.readFileSync('README.md', 'utf-8');
+  const header = readmeContents.split('**Current AFL Ladder**')[0];
+  const footer = readmeContents.split('**AFL Ladder Data JSON/Markdown**')[1];
+  
+  const updatedReadmeContents = `${header}**Current AFL Ladder**\n\n${tableMarkdown}\n\n**AFL Ladder Data JSON/Markdown**${footer}`;
+  fs.writeFileSync('README.md', updatedReadmeContents);
 }
 
 parseAFLWebsiteData();
