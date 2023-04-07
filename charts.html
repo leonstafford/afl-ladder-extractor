@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AFL Ladder Charts</title>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+  <h1>AFL Ladder Charts</h1>
+
+  <div id="chart1"></div>
+
+  <div id="chart2"></div>
+
+  <script>
+    // Load data from AFL ladder JSON file
+    d3.json("afl-ladder.json").then(function(data) {
+
+      // Chart 1: Bar chart of points by club
+      var pointsByClub = d3.nest()
+        .key(function(d) { return d.club; })
+        .rollup(function(v) { return d3.sum(v, function(d) { return +d.points; }); })
+        .entries(data);
+
+      var margin = {top: 20, right: 20, bottom: 30, left: 40},
+          width = 960 - margin.left - margin.right,
+          height = 500 - margin.top - margin.bottom;
+
+      var x = d3.scaleBand()
+        .range([0, width])
+        .padding(0.1);
+
+      var y = d3.scaleLinear()
+        .range([height, 0]);
+
+      var svg1 = d3.select("#chart1").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      x.domain(pointsByClub.map(function(d) { return d.key; }));
+      y.domain([0, d3.max(pointsByClub, function(d) { return d.value; })]);
+
+      svg1.selectAll(".bar")
+        .data(pointsByClub)
+        .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", function(d) { return x(d.key); })
+        .attr("width", x.bandwidth())
+        .attr("y", function(d) { return y(d.value); })
+        .attr("height", function(d) { return height - y(d.value); });
+
+      svg1.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
+
+      svg1.append("g")
+        .call(d3.axisLeft(y));
+
+      svg1.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0 - margin.left)
+        .attr("x",0 - (height / 2))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("Points");
+
+      // Chart 2: Stacked bar chart of wins and losses by club
+      var winsAndLossesByClub = d3.nest()
+        .key(function(d) { return d.club; })
+        .rollup(function(v) {
+          var wins = d3.sum(v, function(d) { return d.won === "" ? 0 : +d.won; });
+          var losses = d3.sum(v, function(d) { return d.lost === "" ? 0 : +d.lost; });
+          return { "wins": wins, "losses": losses };
+        })
+        .entries(data);
+
+    var svg2 = d3.select("#chart2").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var stackedData = d3.stack()
+        .keys(["wins", "losses"])
+        (winsAndLossesByClub.map(function(d) {
+        return { "club": d.key, "wins": d.value.wins, "losses": d.value.losses };
+        }));
+
+    var x2 = d3.scaleBand()
+        .domain(winsAndLossesByClub.map(function(d) { return d.key; }))
+        .range([0, width])
+        .padding(0.1);
+
+    var y2 = d3.scaleLinear()
+        .domain([0, d3.max(winsAndLossesByClub, function(d) { return d.value.wins + d.value.losses; })])
+        .range([height, 0]);
+
+    var color = d3.scaleOrdinal()
+        .domain(["wins", "losses"])
+        .range(["#4daf4a", "#e41a1c"]);
+
+    svg2.append("g")
+        .selectAll("g")
+        .data(stackedData)
+        .enter().append("g")
+        .attr("fill", function(d) { return color(d.key); })
+        .selectAll("rect")
+        .data(function(d) { return d; })
+        .enter().append("rect")
+        .attr("x", function(d) { return x2(d.data.club); })
+        .attr("y", function(d) { return y2(d[1]); })
+        .attr("height", function(d) { return y2(d[0]) - y2(d[1]); })
+        .attr("width", x2.bandwidth());
+
+    svg2.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x2));
+
+    svg2.append("g")
+        .call(d3.axisLeft(y2));
+
+    svg2.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0 - margin.left)
+        .attr("x",0 - (height / 2))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("Wins/Losses");
+
+    }).catch(function(error) {
+    console.log(error);
+    });
+
+    </script>
+    </body>
+</html>
