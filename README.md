@@ -1,6 +1,24 @@
 **Current AFL Ladder**
 
-(test README change, but not JSON change)
+| Position | Club | Played | Points | Percentage | Won | Lost | Drawn | PF | PA |
+| -------- | ---- | ------ | ------ | ---------- | --- | ---- | ----- | -- | -- |
+| 1 | Carlton | 4 | 14 | 114.2 | 3 | 0 | 1 | 329 | 288 |
+| 2 | St Kilda | 3 | 12 | 150.3 | 3 | 0 | 0 | 251 | 167 |
+| 3 | Collingwood | 4 | 12 | 122.3 | 3 | 1 | 0 | 406 | 332 |
+| 4 | Melbourne | 3 | 8 | 136.8 | 2 | 1 | 0 | 331 | 242 |
+| 5 | Sydney Swans | 3 | 8 | 134.5 | 2 | 1 | 0 | 312 | 232 |
+| 6 | Essendon | 3 | 8 | 129.1 | 2 | 1 | 0 | 306 | 237 |
+| 7 | Brisbane Lions | 4 | 8 | 93.3 | 2 | 2 | 0 | 334 | 358 |
+| 9 | Richmond | 3 | 6 | 109.1 | 1 | 1 | 1 | 215 | 197 |
+| 10 | Fremantle | 3 | 4 | 112.1 | 1 | 2 | 0 | 232 | 207 |
+| 11 | GWS Giants | 3 | 4 | 95.1 | 1 | 2 | 0 | 251 | 264 |
+| 12 | Adelaide Crows | 3 | 4 | 94.3 | 1 | 2 | 0 | 283 | 300 |
+| 13 | West Coast Eagles | 3 | 4 | 90.2 | 1 | 2 | 0 | 249 | 276 |
+| 14 | Port Adelaide | 3 | 4 | 85.2 | 1 | 2 | 0 | 276 | 324 |
+| 15 | Gold Coast Suns | 3 | 4 | 78.7 | 1 | 2 | 0 | 214 | 272 |
+| 16 | Western Bulldogs | 3 | 4 | 66.5 | 1 | 2 | 0 | 173 | 260 |
+| 17 | Hawthorn | 3 | 4 | 60.1 | 1 | 2 | 0 | 182 | 303 |
+| 18 | Geelong Cats | 3 | 0 | 83 | 0 | 3 | 0 | 239 | 288 |
 
 **AFL Ladder Data JSON/Markdown**
 
