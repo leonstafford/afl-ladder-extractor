@@ -12,13 +12,13 @@
 | 9 | Port Adelaide | 5 | 12 | 92.8 | 3 | 2 | 0 | 412 | 444 |
 | 10 | Geelong Cats | 5 | 8 | 119 | 2 | 3 | 0 | 502 | 422 |
 | 11 | Fremantle | 5 | 8 | 99 | 2 | 3 | 0 | 404 | 408 |
-| 12 | North Melbourne | 5 | 8 | 77.5 | 2 | 3 | 0 | 382 | 493 |
-| 13 | Western Bulldogs | 5 | 8 | 76.8 | 2 | 3 | 0 | 318 | 414 |
-| 14 | Richmond | 5 | 6 | 92.4 | 1 | 3 | 1 | 377 | 408 |
-| 15 | GWS Giants | 4 | 4 | 92.6 | 1 | 3 | 0 | 326 | 352 |
+| 12 | GWS Giants | 5 | 8 | 94.4 | 2 | 3 | 0 | 403 | 427 |
+| 13 | North Melbourne | 5 | 8 | 77.5 | 2 | 3 | 0 | 382 | 493 |
+| 14 | Western Bulldogs | 5 | 8 | 76.8 | 2 | 3 | 0 | 318 | 414 |
+| 15 | Richmond | 5 | 6 | 92.4 | 1 | 3 | 1 | 377 | 408 |
 | 16 | Gold Coast Suns | 5 | 4 | 75.1 | 1 | 4 | 0 | 364 | 485 |
 | 17 | West Coast Eagles | 5 | 4 | 74.5 | 1 | 4 | 0 | 401 | 538 |
-| 18 | Hawthorn | 4 | 4 | 52.8 | 1 | 3 | 0 | 227 | 430 |
+| 18 | Hawthorn | 5 | 4 | 59.6 | 1 | 4 | 0 | 302 | 507 |
 
 **AFL Ladder Data JSON/Markdown**
 
