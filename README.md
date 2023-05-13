@@ -2,9 +2,9 @@
 
 | Position | Club | Played | Points | Percentage | Won | Lost | Drawn | PF | PA |
 | -------- | ---- | ------ | ------ | ---------- | --- | ---- | ----- | -- | -- |
-| 1 | Collingwood | 8 | 28 | 121.2 | 7 | 1 | 0 | 702 | 579 |
-| 2 | Port Adelaide | 9 | 28 | 112.1 | 7 | 2 | 0 | 831 | 741 |
-| 3 | Melbourne | 8 | 24 | 138.3 | 6 | 2 | 0 | 859 | 621 |
+| 1 | Melbourne | 9 | 28 | 143.6 | 7 | 2 | 0 | 962 | 670 |
+| 2 | Collingwood | 8 | 28 | 121.2 | 7 | 1 | 0 | 702 | 579 |
+| 3 | Port Adelaide | 9 | 28 | 112.1 | 7 | 2 | 0 | 831 | 741 |
 | 4 | St Kilda | 8 | 24 | 137.1 | 6 | 2 | 0 | 650 | 474 |
 | 5 | Brisbane Lions | 8 | 24 | 122 | 6 | 2 | 0 | 809 | 663 |
 | 6 | Geelong Cats | 9 | 20 | 127.5 | 5 | 4 | 0 | 940 | 737 |
@@ -17,8 +17,8 @@
 | 14 | Sydney Swans | 9 | 12 | 97.7 | 3 | 6 | 0 | 775 | 793 |
 | 15 | GWS Giants | 8 | 12 | 91.9 | 3 | 5 | 0 | 668 | 727 |
 | 16 | North Melbourne | 9 | 8 | 62.9 | 2 | 7 | 0 | 584 | 928 |
-| 17 | Hawthorn | 8 | 4 | 61.6 | 1 | 7 | 0 | 491 | 797 |
-| 18 | West Coast Eagles | 9 | 4 | 60.5 | 1 | 8 | 0 | 615 | 1016 |
+| 17 | West Coast Eagles | 9 | 4 | 60.5 | 1 | 8 | 0 | 615 | 1016 |
+| 18 | Hawthorn | 9 | 4 | 60 | 1 | 8 | 0 | 540 | 900 |
 
 **AFL Ladder Data JSON/Markdown**
 
