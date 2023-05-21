@@ -16,9 +16,9 @@
 | 13 | Gold Coast Suns | 10 | 16 | 96.1 | 4 | 6 | 0 | 795 | 827 |
 | 14 | Richmond | 10 | 14 | 99.5 | 3 | 6 | 1 | 779 | 783 |
 | 15 | GWS Giants | 9 | 12 | 85.4 | 3 | 6 | 0 | 723 | 847 |
-| 16 | North Melbourne | 10 | 8 | 66 | 2 | 8 | 0 | 674 | 1021 |
-| 17 | West Coast Eagles | 9 | 4 | 60.5 | 1 | 8 | 0 | 615 | 1016 |
-| 18 | Hawthorn | 9 | 4 | 60 | 1 | 8 | 0 | 540 | 900 |
+| 16 | Hawthorn | 10 | 8 | 73.7 | 2 | 8 | 0 | 682 | 926 |
+| 17 | North Melbourne | 10 | 8 | 66 | 2 | 8 | 0 | 674 | 1021 |
+| 18 | West Coast Eagles | 10 | 4 | 55.4 | 1 | 9 | 0 | 641 | 1158 |
 
 **AFL Ladder Data JSON/Markdown**
 
