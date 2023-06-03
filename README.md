@@ -2,7 +2,7 @@
 
 | Position | Club | Played | Points | Percentage | Won | Lost | Drawn | PF | PA |
 | -------- | ---- | ------ | ------ | ---------- | --- | ---- | ----- | -- | -- |
-| 1 | Collingwood | 11 | 40 | 133 | 10 | 1 | 0 | 1012 | 761 |
+| 1 | Collingwood | 12 | 44 | 138.4 | 11 | 1 | 0 | 1132 | 818 |
 | 2 | Port Adelaide | 12 | 40 | 116.2 | 10 | 2 | 0 | 1139 | 980 |
 | 3 | Melbourne | 12 | 32 | 134.1 | 8 | 4 | 0 | 1171 | 873 |
 | 4 | Brisbane Lions | 11 | 32 | 124.7 | 8 | 3 | 0 | 1081 | 867 |
@@ -18,7 +18,7 @@
 | 15 | Richmond | 11 | 14 | 98.4 | 3 | 7 | 1 | 846 | 860 |
 | 16 | Hawthorn | 12 | 12 | 75 | 3 | 9 | 0 | 866 | 1155 |
 | 17 | North Melbourne | 11 | 8 | 66.1 | 2 | 9 | 0 | 744 | 1126 |
-| 18 | West Coast Eagles | 11 | 4 | 54.8 | 1 | 10 | 0 | 687 | 1254 |
+| 18 | West Coast Eagles | 12 | 4 | 54.1 | 1 | 11 | 0 | 744 | 1374 |
 
 **AFL Ladder Data JSON/Markdown**
 
