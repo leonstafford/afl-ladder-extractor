@@ -3,7 +3,7 @@
 | Position | Club | Played | Points | Percentage | Won | Lost | Drawn | PF | PA |
 | -------- | ---- | ------ | ------ | ---------- | --- | ---- | ----- | -- | -- |
 | 1 | Collingwood | 15 | 52 | 138.8 | 13 | 2 | 0 | 1396 | 1006 |
-| 2 | Port Adelaide | 14 | 48 | 119.3 | 12 | 2 | 0 | 1356 | 1137 |
+| 2 | Port Adelaide | 15 | 52 | 118.4 | 13 | 2 | 0 | 1434 | 1211 |
 | 3 | Brisbane Lions | 15 | 44 | 127.2 | 11 | 4 | 0 | 1469 | 1155 |
 | 4 | Melbourne | 14 | 36 | 128.3 | 9 | 5 | 0 | 1300 | 1013 |
 | 5 | Western Bulldogs | 15 | 36 | 105.2 | 9 | 6 | 0 | 1224 | 1163 |
