@@ -17,8 +17,8 @@
 | 14 | Gold Coast Suns | 19 | 36 | 95.2 | 9 | 10 | 0 | 1504 | 1580 |
 | 15 | Fremantle | 19 | 32 | 89 | 8 | 11 | 0 | 1476 | 1658 |
 | 16 | Hawthorn | 19 | 20 | 78.4 | 5 | 14 | 0 | 1398 | 1784 |
-| 17 | North Melbourne | 18 | 8 | 66.6 | 2 | 16 | 0 | 1238 | 1859 |
-| 18 | West Coast Eagles | 18 | 4 | 48.9 | 1 | 17 | 0 | 1071 | 2192 |
+| 17 | North Melbourne | 19 | 8 | 67.6 | 2 | 17 | 0 | 1305 | 1931 |
+| 18 | West Coast Eagles | 19 | 8 | 50.6 | 2 | 17 | 0 | 1143 | 2259 |
 
 **AFL Ladder Data JSON/Markdown**
 
